@@ -1,0 +1,47 @@
+.gitUser_Container {
+  background-color: #fff;
+  width: 400px;
+  min-height: 300px;
+  padding: 20px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  border-radius: 10px;
+}
+
+.gitUser_Container input {
+  background-color: #fff;
+  color: #000;
+  border: 1px solid rgb(151, 151, 151);
+  outline: none;
+  border-radius: 5px;
+  font-size: 18px;
+  padding: 8px;
+}
+
+.gitUser_Heading {
+  font-size: 26px;
+  background-color: #027046;
+  width: 100%;
+  color: #fff;
+  padding: 6px 0;
+}
+
+.gitUser_Container input:hover {
+  color: #000;
+  background-color: #00000046;
+}
+
+.gitUser_Avatar {
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.3);
+  border-radius: 12px;
+  height: 250px;
+  width: 250px;
+  overflow: hidden;
+}
+
+.gitUser_Avatar img {
+  height: 250px;
+}
