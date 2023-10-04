@@ -19,7 +19,7 @@ The Counter App is a basic React application that allows you to increment and de
 1. Clone the repository to your local machine:
 
    ```bash
-   git clone https://github.com/your-username/counter-app.git
+   git clone https://github.com/kartiksahu55/React_Part/tree/master/React_Part_2/2.counter
 
 
 2. Navigate to the project directory:
