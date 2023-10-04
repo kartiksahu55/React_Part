@@ -1,0 +1,23 @@
+.counterContainer {
+  background-color: #da5a5a;
+  width: 400px;
+  height: 300px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.counterContainer h2 {
+  color: #fff;
+  font-size: 2.5em;
+}
+
+.buttonGroup button{
+    background-color: #fff;
+    color: #000;
+    font-weight: bold;
+    margin: 10px;
+    border: none;
+}
