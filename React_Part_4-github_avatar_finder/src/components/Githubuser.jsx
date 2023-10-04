@@ -3,10 +3,8 @@ import style from "./Githubuser.module.css";
 import useDebounce from "../hooks/useDebounce";
 
 const Githubuser = () => {
-  const [userAvatar, setUserAvatar] = useState("");
+  const [userGithubData, setUserGithubData] = useState("");
   const [searchTerm, setSearchTerm] = useState("");
-
-  // const debouncingSearch = useDebounce((e) => setSearchTerm(e.target.value));
 
   const submitGithubUser = async () => {
     if (searchTerm) {
@@ -15,8 +13,8 @@ const Githubuser = () => {
       );
 
       const data = await response.json();
-      console.log(data.avatar_url);
-      setUserAvatar(data.avatar_url);
+      console.log(data);
+      setUserGithubData(data);
     }
   };
 
@@ -37,13 +35,17 @@ const Githubuser = () => {
           onChange={useDebounce((e) => setSearchTerm(e.target.value))}
         />
       </div>
-      <div className={style.gitUser_Avatar}>
-        <img
-          src={
-            userAvatar || "https://avatars.githubusercontent.com/u/55272176?v=4"
-          }
-          alt=""
-        />
+      <div className={style.gitUser_Details}>
+        <div className={style.gitUser_Avatar}>
+          <img
+            src={
+              userGithubData.avatar_url ||
+              "https://avatars.githubusercontent.com/u/55272176?v=4"
+            }
+            alt=""
+          />
+        </div>
+        {searchTerm && <input type="text" value={userGithubData.login} className={style.gitUserId} />}
       </div>
     </div>
   );
