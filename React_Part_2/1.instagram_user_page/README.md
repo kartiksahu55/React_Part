@@ -28,7 +28,7 @@ The project is structured into several components:
 1. Clone the repository to your local machine:
 
    ```bash
-   git clone https://github.com/your-username/user-auth-app.git
+   git clone https://github.com/kartiksahu55/React_Part/tree/master/React_Part_2/1.instagram_user_page
 
 2. Navigate to the project directory:
 
